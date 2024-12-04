@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank App - Income & Expense Tracker</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body style="background: rgb(0, 0, 0);">
+
+    <!-- Navigation Bar -->
+    <div class="container navigation pt-5">
+        <div class="row">
+            <div class="col-6 d-flex justify-content-start align-items-center">
+                <i class="fa fa-spinner fa-spinner fa-spin fa-3x fa-fw text-warning pb-5"></i>
+                <a href="Front Page.html" class="d-inline pl-3"
+                    style="color: aquamarine; font-weight: 700; height: auto;">Karn's Bank
+                </a>
+            </div>
+
+            <div class="col-5 pt-2">
+                <div class="row text-center p-0 d-flex justify-content-end align-items-center">
+                    <div class="col-3">
+                        <a href="Transitions.html" class="navigation-link" style="color: bisque;">Transactions</a>
+                    </div>
+
+                    <div class="col-3">
+                        <a href="Contact.html" class="navigation-link" style="color: bisque;">Contact</a>
+                    </div>
+
+                    <div class="col-3">
+                        <button class="p-1" style="width: 100px; border-radius: 5cm;"><a href="Sign In.html"
+                                class="text-warning navigation-link lign-items-center">Sign In</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5" style="align-items: center;">
+        <div class="row container-fluid mt-5 align-items-center">
+            <div class="col-md-6">
+                <h2 class="text-warning text-center">Add Transaction</h2>
+                <form id="transactionForm">
+                    <div class="mb-3">
+                        <label for="description" class="form-label text-primary">Account Number</label>
+                        <input type="text" class="form-control" id="description" placeholder="Enter Account Number"
+                            required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="amount" class="form-label text-primary">Pin Number</label>
+                        <input type="number" class="form-control" id="amount" placeholder="Enter Pin Number" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="amount" class="form-label text-primary">Amount</label>
+                        <input type="number" class="form-control" id="amount" placeholder="Enter Amount" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="type" class="form-label text-primary">Type:- </label>
+                        <select class="form-select" id="type"
+                            style="border-radius: 5px; border-color: yellow; background-color: black; color:  rgb(41, 189, 140);;"
+                            required>
+                            <option value="income">Deposit</option>
+                            <option value="expense">Withdrawal</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add Transaction</button>
+
+                    <div class="mt-5 ">
+                        <h2 class="text-warning">Transaction History</h2>
+                        <ul id="transactionList" class="list-group">
+                        </ul>
+                    </div>
+            </div>
+
+            <br><br><br>
+
+            <br><br><br>
+
+            <div class="row mt-5 container-fluid">
+                <div class="col-md-4">
+                    <div class="card text-white bg-success mb-3">
+                        <div class="card-header">Total Income</div>
+                        <div class="card-body">
+                            <h5 class="card-title" id="totalIncome">$0.00</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-white bg-danger mb-3">
+                        <div class="card-header">Total Expense</div>
+                        <div class="card-body">
+                            <h5 class="card-title" id="totalExpense">$0.00</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-white bg-info mb-3">
+                        <div class="card-header">NetBalance</div>
+                        <div class="card-body">
+                            <h5 class="card-title" id="netBalance">$0.00</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

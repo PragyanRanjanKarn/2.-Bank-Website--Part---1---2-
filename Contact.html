@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank App - Income & Expense Tracker</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body style="background: rgb(0, 0, 0);">
+
+    <!-- Navigation Bar -->
+    <div class="container navigation pt-5">
+        <div class="row">
+            <div class="col-6 d-flex justify-content-start align-items-center">
+                <i class="fa fa-spinner fa-spinner fa-spin fa-3x fa-fw text-warning pb-5"></i>
+                <a href="Front Page.html" class="d-inline pl-3"
+                    style="color: aquamarine; font-weight: 700; height: auto;">Karn's Bank
+                </a>
+            </div>
+
+            <div class="col-5 pt-2">
+                <div class="row text-center p-0 d-flex justify-content-end align-items-center">
+                    <div class="col-3">
+                        <a href="Transitions.html" class="navigation-link" style="color: bisque;">Transactions</a>
+                    </div>
+
+                    <div class="col-3">
+                        <a href="Contact.html" class="navigation-link" style="color: bisque;">Contact</a>
+                    </div>
+
+                    <div class="col-3">
+                        <button class="p-1" style="width: 100px; border-radius: 5cm;"><a href="Sign In.html"
+                                class="text-warning navigation-link lign-items-center">Sign In</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="text-warning">Contact Us</h2>
+                    <br>
+                    <p class="text-info">Do you have any questions? We'd love to hear from you! Fill out the form below
+                        or reach out to us directly.</p>
+                    <ul class="text-white">
+                        <li><strong class="text-warning">Address:</strong> 123 Banking Street, Gourmet City</li>
+                        <li><strong class="text-warning">Phone:</strong> +123 456 7890</li>
+                        <ul><strong class="text-warning">Social Media:- </strong>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong
+                                    class="text-warning">Email:</strong> karn@karnsbank.com</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong
+                                    class="text-warning">Linked In:</strong> linkedin.com/in.KarnsBank</li>
+                            <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong
+                                    class="text-warning">Facebook:</strong> facebook.com/KarnsBank</li>
+                        </ul>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <form>
+                        <div class="form-group">
+                            <label for="name" class="text-primary">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="text-primary">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="text-primary">Message</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

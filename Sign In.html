@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank App - Income & Expense Tracker</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body style="background: rgb(0, 0, 0);">
+
+    <!-- Navigation Bar -->
+    <div class="container navigation pt-5">
+        <div class="row">
+            <div class="col-6 d-flex justify-content-start align-items-center">
+                <i class="fa fa-spinner fa-spinner fa-spin fa-3x fa-fw text-warning pb-5"></i>
+                <a href="Front Page.html" class="d-inline pl-3"
+                    style="color: aquamarine; font-weight: 700; height: auto;">Karn's Bank
+                </a>
+            </div>
+
+            <div class="col-5 pt-2">
+                <div class="row text-center p-0 d-flex justify-content-end align-items-center">
+                    <div class="col-3">
+                        <a href="Transitions.html" class="navigation-link" style="color: bisque;">Transactions</a>
+                    </div>
+
+                    <div class="col-3">
+                        <a href="Contact.html" class="navigation-link" style="color: bisque;">Contact</a>
+                    </div>
+
+                    <div class="col-3">
+                        <button class="p-1" style="width: 100px; border-radius: 5cm;"><a href="Sign In.html"
+                                class="text-warning navigation-link lign-items-center">Sign In</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .signin-form {
+            background-color: rgb(74, 94, 112);
+            background-size: cover;
+            padding: 20px;
+            border-radius: 5px;
+        }
+    </style>
+
+    <body>
+        <div class="signin-form justify-content-center m-5">
+            <h2 class="text-center mb-4 text-warning">Sign In</h2>
+            <form>
+                <div class="mb-3"> <label for="email" class="form-label" style="color: aquamarine;">Email
+                        address</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label" style="color: aquamarine;">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password" required>
+                </div>
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-success">Sign In</button>
+                </div>
+            </form>
+            <div class="text-center mt-3 ">
+                <a href="#" class="text-primary">Forgot password?</a>
+            </div>
+        </div>
+    </body>
+
+</html>
